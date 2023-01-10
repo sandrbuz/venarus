@@ -3,9 +3,62 @@
   padding: 0;
 }
 
+body {
+  height: 4000px;
+  background: #E3E3E3;
+}
+
+.reliable-assistant {
+  height: 300px;
+  opacity: 0.5;
+}
+
 .head {
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(102, 143, 255);
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #E3E3E3;
   height: 107px;
+}
+
+.logo {
+  width: 203px;
+  height: 39px;
+}
+
+.navBtn {
+  border-radius: 32px;
+  border: 1px solid #620F5F;
+  background-color: #620F5F;
+  width: 130px;
+  padding-bottom: 6px;
+}
+
+.navBtn:hover {
+  color: #620F5F;
+  background-color: #E3E3E3;
+  border-color: #620F5F;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 135px;
+    height: 25px;
+  }
+  .navBtn {
+    width: 79px;
+    height: 27px;
+    font-size: 10px;
+    padding-top: 5px !important;
+    margin-right: 10px;
+  }
+  .closedMenu {
+    width: 33px;
+    height: 20px;
+  }
+  .head {
+    height: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */
