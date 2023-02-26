@@ -37,34 +37,53 @@ body {
 
 
 .reliable-assistant {
-    height: 760px;
+    height:960px;
     width: 100vw;
     background-image: url('imgs/waveS.svg');
     background-repeat: no-repeat;
     // background-position: center;
     background-size: 100%;
 }
-
+.ra-row{
+    border: 1px solid red;
+    height: 800px;
+    margin-top: 50px;
+}
+.cloud9-item{
+    width: 600px;
+margin-left: -10px;
+}
+// ------------------------------------------------------------slider
 #wrap {
     /* fixed width, centered in viewport */
-    width: 980px;
+    width: 880px; //980 по умолчанию
     left: -490px;
     margin-left: 50%;
     position: relative;
-    border: 1px solid black;
-    }
-    #showcase {
-    width: 100%;
-    height: 460px;
+    // border: 1px solid black;
+    display: flex;      //добавил сам
+    flex-direction: column; 
+}
+
+#showcase {
+    width: 100%; //100% по умолчанию
+    height: 635px; //460 по умолчанию
+    // margin-left: -100px;
+    overflow: visible !important;
+
+
+    
 
     border-radius: 8px;
-    margin-top: 12px;
+    margin-top: 92px;
     visibility: hidden;
-    }
-    #showcase img {
+}
+
+#showcase img {
     cursor: pointer;
-    }
-    #item-title {
+}
+
+#item-title {
     color: #F31414;
     font-size: 29px;
     letter-spacing: 0.13em;
@@ -72,11 +91,13 @@ body {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 22px;
-    }
-    .nav {
+}
+
+.nav {
     text-align: center;
-    }
-    .nav > button {
+}
+
+.nav>button {
     width: 64px;
     height: 36px;
     color: #666;
@@ -94,50 +115,119 @@ body {
     -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    }
-    .nav > button:active, .nav > button.down {
+}
+
+.nav>button:active,
+.nav>button.down {
     background: #dfdfdf;
     border: solid 2px rgba(0, 0, 0, 0.6);
     box-shadow: none;
-    }
-    .sl-item3{
-    }
-    
-    .ra-nav{
-        margin-left: 450px;
-    }
-    .ra-btns{
-        background: transparent !important;
-        width: 68px !important;
-        height: 68px !important;
-        border-radius: 50% !important;
-        box-shadow: none !important;
-        border: 1px solid #E3E3E3 !important;
-    }
-    .ra-arrow-left{
-        margin-left: -4px !important;
-    }
-    .ra-arrow-right{
-        margin-right: -4px !important;
-    }
+}
 
+// -------------------------------------------------------------------slider
+.ra-item1{
+    border: 1px solid black;
+    // justify-content: space-between;
+}
+.ra-item2{
+    border: 1px solid green;
+}
+
+.ra-nav {
+    margin-left: 430px;
+    margin-top: -50px;
+}
+
+.ra-btns {
+    background: transparent !important;
+    width: 68px !important;
+    height: 68px !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+    border: 1px solid #E3E3E3 !important;
+    margin-top: -65px !important;
+}
+
+.ra-arrow-left {
+    margin-left: -4px !important;
+}
+
+.ra-arrow-right {
+    margin-right: -4px !important;
+}
+
+// #showcase{
+//     height: 900px;
+// }
+.ra-Btn-where {
+width: 263px;
+height: 67px;
+margin-left: 390px;
+margin-top: 30px;
+background-color: transparent;
+border-color: #E3E3E3;
+border-radius: 31px;
+color: #E3E3E3;
+
+
+}
+.ra-helper{
+    font-size: 55px !important;
+    font-family: 'Merriweather', serif;
+    margin-left: -27px;
+}
+.ra-help{
+    font-size: 55px;
+}
+.ra-icon{
+    height: 67px;
+}
+.ra-link{
+    color: #590D56;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -110px;
+    
+}
+.disclaimer-wrap{
+    // background-color: #F9F9F9;
+    width: 80%;
+    background: rgba(249,249,249, 0.7);
+}
+.dis-text{
+    color: #8A8A8A;
+    font-size: 34px;
+    font-weight: lighter;
+}
+.dis-cross{
+    color: #8A8A8A;
+    font-size: 34px;
+    font-weight: lighter;
+}
+.discount{
+    height: 300px;
+    background: green;
+}
 @media (max-width: 480px) {
     .logo {
         width: 135px;
         height: 25px;
     }
-    .navBtn{
+
+    .navBtn {
         width: 79px;
         height: 27px;
         font-size: 10px;
         padding-top: 5px !important;
         margin-right: 10px;
     }
-    .closedMenu{
-        width:33px;
+
+    .closedMenu {
+        width: 33px;
         height: 20px;
     }
-    .head{
+
+    .head {
         height: 50px;
         position: fixed;
         right: 0;
@@ -145,9 +235,7 @@ body {
         bottom: 0;
     }
 }
-@media (max-width: 400px) {
- .head{
-    
- }
-}
 
+@media (max-width: 400px) {
+    .head {}
+}
